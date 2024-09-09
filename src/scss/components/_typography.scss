@@ -1,0 +1,64 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+
+//DISPLAY 2
+//used mainly in the intro section. (Hey there, I'm Max!)
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+
+
+    &--intro {
+        display: inline-block;   //allows us to set width and height and the element sits next to others
+        font-weight: 700;
+        color: $white;
+    }
+
+    &--description {
+        display: block;
+        color: $white;
+        font-size: 1.5rem;
+        margin-top: 1.25rem;
+        font-weight: 200;
+        text-transform: none;
+        text-align: justify;
+        @include media-breakpoint-down(sm) {
+            font-size: 1rem;
+        }
+    }
+}
+
+//HEADING LINE
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+}
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    padding-top: 0.25rem;
+    height: 0.15rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+}
+//The above two properties add a simple doble line to the bottom of our text.
+
+//DISPLAY 3
+.display-3 {
+    font-family: "Poppins", sans-serif;
+    
+}
+
+//BORDER RIGHT
+//adds a gray line at the right of the class content
+.border-right {
+    border-right: solid 0.1rem $gray-400;
+    height: 100%;
+}

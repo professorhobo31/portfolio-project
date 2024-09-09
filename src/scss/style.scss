@@ -1,0 +1,14 @@
+//IMPORT OUR CUSTOM FILE
+@use 'custom';
+
+//IMPORT THE COMPONENTS
+@use 'components/animations';
+@use 'components/mixins';
+@use 'components/buttons';
+@use 'components/typography';
+
+//IMPORT THE SECTIONS
+@use 'sections/navbar';
+@use 'sections/intro-section';
+@use 'sections/services';
+@use 'sections/testimonials';
