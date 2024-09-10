@@ -14,6 +14,7 @@
         display: inline-block;   //allows us to set width and height and the element sits next to others
         font-weight: 700;
         color: $white;
+        text-transform: none;
     }
 
     &--description {
