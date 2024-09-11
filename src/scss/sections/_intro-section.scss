@@ -14,13 +14,16 @@
     position: relative;
 
     a {
-        position: absolute;
-        top: 42.5%;
-        left: 45%;
-        @include media-breakpoint-down(sm) {
-            left: 40%;
-        }
-        transform: translate(-50%, -50%);
+      position: absolute;
+      top: 42.5%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      @include media-breakpoint-up(lg) {
+        top: 45%;
+      }
+      @include media-breakpoint-down(sm) {
+        left: 40%;
+      }
       span {
         i {
           position: absolute;
@@ -33,18 +36,18 @@
 }
 
 .border-animation {
-    position: absolute;
-    width: 6rem;
-    height: 6rem;
-    border: solid 0.75rem $white;
-    border-radius: 50%;
-    animation: pulse-border 1.5s linear infinite;
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border: solid 0.75rem $white;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
 
-    &--border1 {
-        animation-delay: 0.25s;
-    }
+  &--border1 {
+    animation-delay: 0.25s;
+  }
 
-    &--border2 {
-        animation-delay: 0.75s;
-    }
+  &--border2 {
+    animation-delay: 0.75s;
+  }
 }
