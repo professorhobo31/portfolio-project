@@ -64,6 +64,10 @@
             @include media-breakpoint-up(sm) {
                 font-size: 1.5rem;
             }
+
+            &:hover {
+                filter: brightness(50%);
+            }
         }
     }
 }
@@ -77,6 +81,24 @@
 
         &:hover {
             color: $primary;
+        }
+    }
+}
+
+// COPYRIGHT
+
+.footer-bottom {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #212121;
+
+    &__copyright {
+        a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                color: $primary;
+            }
         }
     }
 }
