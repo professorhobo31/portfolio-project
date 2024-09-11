@@ -48,3 +48,31 @@
 
     }
 }
+
+// FAKE SOCIAL MEDIA 2ND THIRD AREA
+
+.footer-social-media {
+    background-color: #212121;
+
+    a {
+        color: $white;
+
+        i {
+            font-size: 1rem;
+            margin-left: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// LARGE AREA 3RD/3RD OF FOOTER
+
+.list-inline {
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
