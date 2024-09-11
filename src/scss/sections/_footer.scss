@@ -74,5 +74,9 @@
     a {
         color: $white;
         text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
