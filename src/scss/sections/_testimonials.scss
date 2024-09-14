@@ -5,7 +5,8 @@
     position: relative;
     padding: 0;
     @include gradient;
-    color: rgba($white, 0.75);
+    color: rgba($white, 0.85);
+    min-height: 10rem;
 
     &__card {
         background-color: rgba($white, 0.8);
@@ -14,9 +15,11 @@
         height: auto;
         text-align: center;
         color: $indigo-600;
+        gap: 10rem;
 
         i {
-            font-size: 2rem;
+            font-size: 1.7rem;
+            padding: 0.15rem;
         }
 
         .fa-star {
@@ -40,23 +43,30 @@
         width: 6rem;
         border-radius: 50%;
         left: 50%;
-        transform: translate(-50%, -30%);
-
-        img {
-            border: 0.25rem solid rgba($primary, 0.75);
-        }
+        transform: translate(-50%, 10%);
+        border: 0.25rem solid rgba($primary, 0.8);
     }
 
     &__name {
-        padding-top: 4rem;
         margin-bottom: 1rem;
         text-align: center;
         font-weight: 600;
         color: $white;
+        text-transform: capitalize;
+     }
 
-        h3 {
-            padding-top: 2rem;
-            text-transform: capitalize;
-        }
+    &__carousel-caption {
+        padding-top: 5rem;
+        color: $white;
     }
+}
+
+.carousel-item.active {
+    margin-bottom: 4rem;
+}
+
+.testimonials__carousel-caption,
+.testimonials__name, 
+.carousel-inner {
+    background-color: rgba($white, 0);
 }

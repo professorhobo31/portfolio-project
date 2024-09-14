@@ -17,7 +17,8 @@
     <!--//////////////////////////////////NAVBAR///////////////////////////////////////////////////-->
     <nav class="navbar navbar-expand-lg navbar-collapse menu shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">MAX</a>  <!--create a logo with an M or my name later-->
+        <a class="navbar-brand" href="#">MAX</a>
+        <!--create a logo with an M or my name later-->
         <button
           class="navbar-toggler"
           type="button"
@@ -205,7 +206,9 @@
     <section id="services" class="our-services">
       <div class="container">
         <div class="row">
-          <h1 class="display-3 fw-bold text-uppercase text-center">Nuestros Servicios</h1>
+          <h1 class="display-3 fw-bold text-uppercase text-center">
+            Nuestros Servicios
+          </h1>
           <div class="heading-line mb-3"></div>
         </div>
       </div>
@@ -230,7 +233,8 @@
                 archivos .scss, y un archivo _custom.scss que edita ciertas
                 variables base de bootstrap (la selección de theme colors por
                 ejemplo) sin editar destructivamente los archivos base de
-                Bootstrap. Destaco un breve resumen de lo practicado en el proyecto:
+                Bootstrap. Destaco un breve resumen de lo practicado en el
+                proyecto:
               </p>
             </div>
           </div>
@@ -297,12 +301,13 @@
               <div class="icon fas fa-code"></div>
               <h3 class="display-3--title mt-1">Uso de Sass</h3>
               <p class="lh-lg">
-                Para dar estructura al proyecto se dividió en dos
-                carpetas principales de archivos .scss. En src/scss/components hay una lista
-                de componentes: se agrupa aquí cualquier
-                animación, mixin o estilo que se intenda reusar en el proyecto. La carpeta src/scss/sections contiene una lista de secciones: esto permite desglosar y
-                trabajar en los estilos usando archivos con menos líneas de código y
-                ayuda a organizar.
+                Para dar estructura al proyecto se dividió en dos carpetas
+                principales de archivos .scss. En src/scss/components hay una
+                lista de componentes: se agrupa aquí cualquier animación, mixin
+                o estilo que se intenda reusar en el proyecto. La carpeta
+                src/scss/sections contiene una lista de secciones: esto permite
+                desglosar y trabajar en los estilos usando archivos con menos
+                líneas de código y ayuda a organizar.
               </p>
               <a href="#footer">
                 <button
@@ -325,12 +330,12 @@
               <h3 class="display-3--title mt-1">Gulp y Browsersync</h3>
               <p class="lh-lg">
                 Los archivos .scss finalmente se compilan y minifican a través
-                de Gulp. Leyendo la documentación de
-                Gulp se creó el archivo gulpfile.js, creando un comando que 
-                active un servidor falso de desarrollo mediante el paquete
-                Browsersync. Así, ante cada edición de los archivos .scss o
-                index.html, se regeneran automáticamente los archivos de output .css y la
-                página se recarga en vivo, acelerando el proceso de desarrollo.
+                de Gulp. Leyendo la documentación de Gulp se creó el archivo
+                gulpfile.js, creando un comando que active un servidor falso de
+                desarrollo mediante el paquete Browsersync. Así, ante cada
+                edición de los archivos .scss o index.html, se regeneran
+                automáticamente los archivos de output .css y la página se
+                recarga en vivo, acelerando el proceso de desarrollo.
               </p>
               <a href="#footer">
                 <button
@@ -375,141 +380,165 @@
         </div>
       </div>
       <!-- Carousel -->
+
       <div class="container">
-        <div class="row align-items-center">
-          <div id="carouselExampleCaptions" class="carousel">
-            <div class="carousel-inner">
-              <!-- Carousel Item 1 -->
-              <div class="carousel-item active">
-                <!-- Card Elements -->
-                <div class="testimonials__card">
-                  <div class="lh-lg">
-                    <div class="content">
-                      <i class="icon fas fa-quote-left"></i>
-                      <p class="inner-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Necessitatibus, magnam corrupti delectus optio
-                        temporibus alias odio ipsum omnis, nam doloremque iste?
-                      </p>
-                      <i class="icon fas fa-quote-right"></i>
-                    </div>
-                    <div class="ratings">
-                      <i class="icon fas fa-star"></i>
-                      <i class="icon fas fa-star"></i>
-                      <i class="icon fas fa-star"></i>
-                      <i class="icon fas fa-star"></i>
-                      <i class="icon fas fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- Client Picture Container -->
-                <div class="testimonials__picture">
-                  <img
-                    src="images/testimonials/client-1.jpg"
-                    alt="client-1 picture"
-                    class="rounded-circle img-fluid"
-                  />
-                </div>
-                <!-- Client Name -->
-                <div class="testimonials__name">
-                  <h3>Robertino Gerundio</h3>
-                  <p class="fw-light">CEO y Fundador de Gerundio y Asociados</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <!-- Card Elements -->
-              <div class="testimonials__card">
-                <div class="lh-lg">
-                  <div class="content">
-                    <i class="icon fas fa-quote-left"></i>
-                    <p class="inner-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsam eum rerum commodi accusantium earum perferendis
-                      assumenda, sapiente distinctio quam architecto? Non,
-                      provident. Quasi explicabo libero dolore quisquam fuga
-                      delectus ipsum doloremque cupiditate?
-                    </p>
-                    <i class="icon fas fa-quote-right"></i>
-                  </div>
-                  <div class="ratings">
-                    <i class="icon fas fa-star"></i>
-                    <i class="icon fas fa-star"></i>
-                    <i class="icon fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Client Picture Container -->
-              <div class="testimonials__picture">
-                <img
-                  src="images/testimonials/client-2.jpg"
-                  alt="client-1 picture"
-                  class="rounded-circle img-fluid"
-                />
-              </div>
-              <!-- Client Name -->
-              <div class="testimonials__name">
-                <h3>Juan Palomo</h3>
-                <p class="fw-light">Adiestrador de palomas</p>
-              </div>
-            </div>
+        <div id="testimonials-carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonials-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonials-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonials-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-
-          <div class="carousel-item">
-            <!-- Card Elements -->
-            <div class="testimonials__card">
-              <div class="lh-lg">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="testimonials__card">
                 <div class="content">
                   <i class="icon fas fa-quote-left"></i>
-                  <p class="inner-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus, magnam corrupti.
-                  </p>
+                  <span
+                    >Trabajar combinando Sass con Browsersync es muy cómodo.
+                    Nestear selectores y ver los cambios de manera dinámica
+                    aceleran mucho el proceso iterativo de cualquier
+                    diseño!</span
+                  >
                   <i class="icon fas fa-quote-right"></i>
                 </div>
-                <div class="ratings">
+
+                <!-- Image and stars -->
+
+                <div>
+                  <i class="icon fas fa-star"></i>
+                  <i class="icon fas fa-star"></i>
                   <i class="icon fas fa-star"></i>
                   <i class="icon fas fa-star"></i>
                   <i class="icon fas fa-star"></i>
                 </div>
+                <img
+                  src="images/testimonials/client-1.jpg"
+                  alt="client-1"
+                  class="img-fluid testimonials__picture"
+                />
+              </div>
+
+              <!-- Footing text -->
+              <div class="testimonials__carousel-caption">
+                <h3 class="testimonials__name fw-light">Roberto Palomo</h3>
+                <p class="text-center">Gestor regional de guisos de paloma</p>
               </div>
             </div>
-            <!-- Client Picture Container -->
-            <div class="testimonials__picture">
-              <img
-                src="images/testimonials/client-1.jpg"
-                alt="client-1 picture"
-                class="rounded-circle img-fluid"
-              />
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="testimonials__card">
+                <div class="content">
+                  <i class="icon fas fa-quote-left"></i>
+                  <span
+                    >Gulp dió ciertos dolores de cabeza para configurar
+                    inicialmente, pero es innegable que una vez que empieza a
+                    funcionar es una herramienta necesaria para generar archivos
+                    y encadenar tareas durante el desarrollo.</span
+                  >
+                  <i class="icon fas fa-quote-right"></i>
+                </div>
+
+                <!-- Image and stars -->
+
+                <div>
+                  <i class="icon fas fa-star"></i>
+                  <i class="icon fas fa-star"></i>
+                  <i class="icon fas fa-star"></i>
+                </div>
+                <img
+                  src="images/testimonials/client-1.jpg"
+                  alt="client-1"
+                  class="img-fluid testimonials__picture"
+                />
+              </div>
+
+              <!-- Footing text -->
+              <div class="testimonials__carousel-caption">
+                <h3 class="testimonials__name fw-light">
+                  Joaquín Rigoberto Jr.
+                </h3>
+                <p class="text-center">Supervisor de supervisores</p>
+              </div>
             </div>
-            <!-- Client Name -->
-            <div class="testimonials__name">
-              <h3>Francisca Maffioli</h3>
-              <p class="fw-light">Experta en casi todo</p>
+
+            <!-- Third Slide -->
+            <div class="carousel-item">
+              <div class="testimonials__card">
+                <div class="content">
+                  <i class="icon fas fa-quote-left"></i>
+                  <span
+                    >Bootstrap permite dar un look estandarizado pero al mismo
+                    tiempo muy personalizable a la página. El descubrimiento de
+                    getwaves.io tambièn aportó a darle un toque extra a un
+                    diseño que de partida era bastante simple. Fontawesome
+                    aportó la mayoría de los íconos de la página y es fácil de
+                    usar luego de agarrarle la mano.</span
+                  >
+                  <i class="icon fas fa-quote-right"></i>
+                </div>
+
+                <!-- Image and stars -->
+
+                <div>
+                  <i class="icon fas fa-star"></i>
+                  <i class="icon fas fa-star"></i>
+                  <i class="icon fas fa-star"></i>
+                  <i class="icon fas fa-star"></i>
+                </div>
+                <img
+                  src="images/testimonials/client-2.jpg"
+                  alt="client-2"
+                  class="img-fluid testimonials__picture"
+                />
+              </div>
+
+              <!-- Footing text -->
+              <div class="testimonials__carousel-caption">
+                <h3 class="testimonials__name fw-light">Guajolote Macías</h3>
+                <p class="text-center">Ladrón profesional de pokemones</p>
+              </div>
             </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonials-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonials-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+
       <!-- Bottom Wave -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
