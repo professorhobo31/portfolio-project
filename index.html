@@ -205,7 +205,7 @@
     <section id="services" class="our-services">
       <div class="container">
         <div class="row">
-          <h1 class="display-3 fw-bold text-center">Nuestros Servicios</h1>
+          <h1 class="display-3 fw-bold text-uppercase text-center">Nuestros Servicios</h1>
           <div class="heading-line mb-3"></div>
         </div>
       </div>
@@ -215,8 +215,8 @@
         <div class="row pt-2 pb-2 mt-5 mb-2">
           <div class="col-md-6 border-right">
             <div class="bg-white p-3">
-              <h2 class="fw-bold text-capitalize text-center">
-                nuestros servicios van desde simple desarrollo web, hasta el
+              <h2 class="fw-bold text-center">
+                Nuestros servicios van desde simple desarrollo web, hasta el
                 despliegue de una página en cualquier momento, en cualquier
                 lugar
               </h2>
@@ -225,10 +225,12 @@
           <div class="col-md-6">
             <div class="bg-white p-4 text-start">
               <p class="fw-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                quo dolorum nihil sit neque quia fuga molestiae, harum soluta
-                vel quisquam quod, id impedit iste, ducimus dignissimos veniam
-                itaque.
+                Esta página constituye el primer acercamiento, de mi parte, al
+                trabajo con Bootstrap. El proyecto usa una estructura de
+                archivos .scss, y un archivo _custom.scss que edita ciertas
+                variables base de bootstrap (la selección de theme colors por
+                ejemplo) sin editar destructivamente los archivos base de
+                Bootstrap. Destaco además:
               </p>
             </div>
           </div>
@@ -239,17 +241,18 @@
     <!-- CONTENT FOR SERVICES -->
 
     <div class="container" id="service-section-container">
-      <!-- MARKETING -->
+      <!-- Section 1 -->
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
           <div class="services__content">
             <div class="icon fas fa-paper-plane"></div>
-            <h3 class="display-3--title mt-1">Marketing</h3>
+            <h3 class="display-3--title mt-1">Flexbox</h3>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              amet pariatur, accusantium eius consectetur optio tenetur
-              temporibus ullam esse aliquid, vero sunt natus odit sit unde,
-              corrupti dolorem!
+              Esta sección ha sido estilizada usando propiedades flex de manera
+              tal que en pantallas grandes el texto y las imágenes vayan
+              intercambiando las mitades horizontales de la pantalla, pero que
+              al disminuir al tamaño de las pantallas que usan los celulares, el
+              orden no cambie y se vuelva un patrón lineal texto-imagen.
             </p>
             <a href="#footer">
               <button
@@ -271,7 +274,7 @@
           </div>
         </div>
       </div>
-      <!-- WEB DEVELOPMENT -->
+      <!-- Section 2 -->
       <div class="row">
         <div
           class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4"
@@ -292,12 +295,15 @@
           <div class="services__content">
             <div class="services__content">
               <div class="icon fas fa-code"></div>
-              <h3 class="display-3--title mt-1">Desarrollo Web</h3>
+              <h3 class="display-3--title mt-1">Uso de Sass</h3>
               <p class="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                amet pariatur, accusantium eius consectetur optio tenetur
-                temporibus ullam esse aliquid, vero sunt natus odit sit unde,
-                corrupti dolorem!
+                La estructura de archivos del proyecto se dividió en dos
+                carpetas principales de archivos .scss. Una contiene una lista
+                de componentes: la idea al inicio era agrupar aquí cualquier
+                animación, mixin o estilo que fuera a reusarse. Otra carpeta
+                contiene una lista de seccionGulp y es: esto permite desglosar y
+                trabajar en los estilos usando archivos menos sobrecargados y
+                ayuda a organizar.
               </p>
               <a href="#footer">
                 <button
@@ -311,18 +317,21 @@
           </div>
         </div>
       </div>
-      <!-- CLOUD STORAGE -->
+      <!-- Section 3 -->
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
           <div class="services__content">
             <div class="services__content">
               <div class="icon fas fa-cloud-arrow-up"></div>
-              <h3 class="display-3--title mt-1">Almacenamiento en la Nube</h3>
+              <h3 class="display-3--title mt-1">Gulp y Browsersync</h3>
               <p class="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                amet pariatur, accusantium eius consectetur optio tenetur
-                temporibus ullam esse aliquid, vero sunt natus odit sit unde,
-                corrupti dolorem!
+                Los archivos .scss finalmente se compilan y minifican a través
+                de Gulp. Leyendo la documentación de
+                Gulp se creó el archivo gulpfile.js, creando un comando que 
+                active un servidor falso de desarrollo mediante el paquete
+                Browsersync. Así, ante cada edición de los archivos .scss o
+                index.html, se regeneran automáticamente los archivos de output .css y la
+                página se recarga en vivo, acelerando el proceso de desarrollo.
               </p>
               <a href="#footer">
                 <button
@@ -542,7 +551,7 @@
             </div>
             <div class="contact-box__info">
               <a href="" class="contact-box__info--title">3455-512848</a>
-              <p class="contact-box__info--subtitle">Lun-Sab 9am-7pm</p>
+              <p class="contact-box__info--subtitle">Lun-Sab | 9am-7pm</p>
             </div>
           </div>
           <!-- Mail here, maxigiaco or gmail decide -->
