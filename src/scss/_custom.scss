@@ -1,19 +1,19 @@
 // COLORS
-$blue:         #0d6efd;
-$indigo:       #6610f2;
-$purple:       #BB6EF5;
-$purple-dark:  #9926f0;
-$pink:         #d122e3;
-$red:          #dc3545;
-$orange:       #fd7e14;
-$yellow:       #ffc107;
-$green:        #198754;
-$teal:         #20c997;
-$cyan:         #0dcaf0;
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #bb6ef5;
+$purple-dark: #9926f0;
+$pink: #d122e3;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
 
 // BLACK AND WHITES
 
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -23,27 +23,31 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
+$black: #000;
 
 // THEME COLORS
 
-$primary:       $purple-dark;
-$secondary:     $pink;
-$success:       $green;
-$info:          $cyan;
-$warning:       $yellow;
-$danger:        $red;
-$light:         $gray-100;
-$dark:          $gray-900;
-$footer:        #151414;
+$primary: $purple-dark;
+$secondary: $pink;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+$footer: #151414;
 
 // ACCORDION EDITS
 
-$accordion-icon-color:                    $primary;
-$accordion-icon-active-color:             $secondary;
-$accordion-icon-width:                    1.875rem;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-icon-width: 1.875rem;
+
+// ACCORDION ICON SWAP
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$accordion-icon-color}' class='bi bi-plus-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>");
+
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$accordion-icon-active-color}' class='bi bi-dash-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>");
 
 // IMPORT BOOTSTRAP
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 //REMINDER: this line NEEDS to be BELOW all edits to default variables in order to work properly otherwise our changes wont show
-
